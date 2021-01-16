@@ -1,0 +1,21 @@
+<h2> Connection List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Authorized </th>
+            <th> Domain </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let connection of connections" >
+            <td> {{ connection.authorized }} </td>
+            <td> {{ connection.domain }} </td>
+            <td>
+                <button (click) = "updateConnection(connection.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteConnection(connection.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "connectionDetails(connection.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
