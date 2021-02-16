@@ -5,6 +5,7 @@
             <th> First Name</th>
             <th> Last Name </th>
             <th> Suffix </th>
+            <th> SSN </th>
             <th> Email Id</th>
             <th> Actions </th>
         </tr>
@@ -14,6 +15,7 @@
             <td> {{ person.firstName }} </td>
             <td> {{ person.lastName }} </td>
             <td> {{ person.suffix }} </td>
+            <td> {{ person.ssn }} </td>
             <td> {{ person.emailId }} </td>
             <td>
                 <button (click) = "updatePerson(person.id)" class = "btn btn-info"> Update</button>
