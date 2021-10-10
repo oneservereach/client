@@ -6,6 +6,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Dev Env Startup
+
+- sudo /etc/init.d/apache2 stop
+- sudo service mysql stop
+- docker compose up -d
+- client: ng serve --open
+- /oneservereach-backend/src/main/java/com/oneservereach/main/OneservereachBackendApplication.java: run server
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
